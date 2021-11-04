@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:size=10:style=Italic";
+static char *font = "JetBrainsMono Nerd Font:size=11:style=Italic";
 
 static int borderpx = 0;
 
@@ -199,8 +199,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_I,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_D,           zoom,           {.f = -1} },
+	{ TERMMOD,              XK_Page_Up,     zoom,           {.f = +1} },
+	{ TERMMOD,              XK_Page_Down,   zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
