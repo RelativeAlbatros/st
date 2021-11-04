@@ -100,14 +100,14 @@ float alpha = 0.8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#3b4252", // black
+	"#bf616a", // red3
+	"#a3be8c", // green3
+	"#ebcb8b", // yellow3
+	"#5e81ac", // blue2
+	"#b48ead", // magenta3
+	"#81a1c1", // cyan3
+	"#eceff4", // gray90
 
 	/* 8 bright colors */
 	"gray50",
@@ -122,10 +122,12 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"black",
-	"#303030",
+	"#cccccc", //256
+	"#555555", //257
+	"black",   //258
+	"#303030", //259
+	"#2e3440", //260
+	"#e5e9f0", //261
 };
 
 
@@ -134,8 +136,8 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 7;
-unsigned int defaultbg = 259;
-static unsigned int defaultcs = 256;
+unsigned int defaultbg = 260;
+static unsigned int defaultcs = 261;
 static unsigned int defaultrcs = 257;
 
 /*
@@ -205,8 +207,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_I,       		kscrollup,      {.i = -1} },
+	{ TERMMOD, 	            XK_K,      		  kscrolldown,    {.i = -1} },
 };
 
 /*
