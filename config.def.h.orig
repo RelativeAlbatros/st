@@ -100,29 +100,7 @@ float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-  /* 8 normal colors */
-  [0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-  [1] = "#ea6962", /* red     */
-  [2] = "#a9b665", /* green   */
-  [3] = "#d8a657", /* yellow  */
-  [4] = "#7daea3", /* blue    */
-  [5] = "#d3869b", /* magenta */
-  [6] = "#89b482", /* cyan    */
-  [7] = "#d4be98", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#928374", /* black   */
-  [9]  = "#ef938e", /* red     */
-  [10] = "#bbc585", /* green   */
-  [11] = "#e1bb7e", /* yellow  */
-  [12] = "#9dc2ba", /* blue    */
-  [13] = "#e1acbb", /* magenta */
-  [14] = "#a7c7a2", /* cyan    */
-  [15] = "#e2d3ba", /* white   */
-};
-
-/*	    nord theme
-    // 8 normal colors 
+	/* 8 normal colors */
 	"#3b4252", // black
 	"#bf616a", // red3
 	"#a3be8c", // green3
@@ -132,7 +110,7 @@ static const char *colorname[] = {
 	"#81a1c1", // cyan3
 	"#eceff4", // gray90
 
-	// 8 bright colors 
+	/* 8 bright colors */
 	"#434c5e", // gray50
 	"red",
 	"green",
@@ -144,7 +122,7 @@ static const char *colorname[] = {
 
 	[255] = 0,
 
-	// more colors can be added after 255 to use with DefaultXX
+	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc", //256
 	"#555555", //257
 	"black",   //258
@@ -152,16 +130,15 @@ static const char *colorname[] = {
 	"#2e3440", //260
 	"#e5e9f0", //261
 };
-	*/
 
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 15;
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 260;
+static unsigned int defaultcs = 261;
 static unsigned int defaultrcs = 257;
 
 /*
