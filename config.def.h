@@ -5,7 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:size=11:style=Italic";
+/* static char *font = "JetBrainsMono Nerd Font:size=11:style=Italic"; */
+/* static char *font = "Fantasque Sans Mono:style=Italic:size=11"; */
+static char *font = "Hermit:style=Regular:size=11";
 
 static int borderpx = 0;
 
@@ -95,7 +97,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1;
+float alpha = 0.9;
 
 
 /* Terminal colors (16 first used in escape sequence) */
