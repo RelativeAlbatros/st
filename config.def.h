@@ -5,8 +5,6 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-/* static char *font = "JetBrainsMono Nerd Font:size=11:style=Italic"; */
-/* static char *font = "Fantasque Sans Mono:style=Italic:size=11"; */
 static char *font = "Hermit:style=Regular:size=11";
 
 static int borderpx = 0;
