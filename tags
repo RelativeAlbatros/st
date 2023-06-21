@@ -334,7 +334,7 @@ allowaltscreen	config.h	/^int allowaltscreen = 1;$/;"	v	typeref:typename:int
 allowwindowops	config.def.h	/^int allowwindowops = 0;$/;"	v	typeref:typename:int
 allowwindowops	config.h	/^int allowwindowops = 0;$/;"	v	typeref:typename:int
 alpha	config.def.h	/^float alpha = 0.80;$/;"	v	typeref:typename:float
-alpha	config.h	/^float alpha = 0.85;$/;"	v	typeref:typename:float
+alpha	config.h	/^float alpha = 0.80;$/;"	v	typeref:typename:float
 alt	st.c	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:Line *	file:
 alt	st.c	/^	int alt;$/;"	m	struct:__anon7c9e12dd0208	typeref:typename:int	file:
 appcursor	x.c	/^	signed char appcursor; \/* application cursor *\/$/;"	m	struct:__anon0b88b7ae0308	typeref:typename:signed char	file:
@@ -617,7 +617,7 @@ stty_args	config.h	/^char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 
 t	x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon0b88b7ae0508	typeref:typename:int	file:
 tabs	st.c	/^	int *tabs;$/;"	m	struct:__anon7c9e12dd0408	typeref:typename:int *	file:
 tabspaces	config.def.h	/^unsigned int tabspaces = 4;$/;"	v	typeref:typename:unsigned int
-tabspaces	config.h	/^unsigned int tabspaces = 8;$/;"	v	typeref:typename:unsigned int
+tabspaces	config.h	/^unsigned int tabspaces = 4;$/;"	v	typeref:typename:unsigned int
 tattrset	st.c	/^tattrset(int attr)$/;"	f	typeref:typename:int
 tclearregion	st.c	/^tclearregion(int x1, int y1, int x2, int y2)$/;"	f	typeref:typename:void
 tclick1	x.c	/^	struct timespec tclick1;$/;"	m	struct:__anon0b88b7ae0708	typeref:struct:timespec	file:
