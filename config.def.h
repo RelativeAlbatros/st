@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hermit:style=Regular:size=10";
+static char *font = "Hurmit Nerd Font:style=Regular:size=10";
 
 static int borderpx = 0;
 
@@ -95,7 +95,8 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.90;
+// compositor will manage transparency
+float alpha = 1.00;
 
 
 /* Terminal colors (16 first used in escape sequence) */
