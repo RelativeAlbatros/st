@@ -1,5 +1,6 @@
 tag*
 st
-st.o
-x.o
+*.orig
+*.rej
+*.o
 config.h
